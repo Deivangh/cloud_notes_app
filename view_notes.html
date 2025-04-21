@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Notes</title>
+</head>
+<body>
+    <h2>Saved Notes</h2>
+    {% for note in notes %}
+        <hr>
+        <h3>{{ note[1] }}</h3>
+        <p>{{ note[2] }}</p>
+        <small>Saved on: {{ note[3] }}</small>
+    {% endfor %}
+    <br><br>
+    <a href="/">Add New Note</a>
+</body>
+</html>
+
+
